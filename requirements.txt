@@ -1,6 +1,6 @@
 # YOLOv5 requirements
 # Usage: pip install -r requirements.txt
-PIL
+Pillow
 opencv-python-headless
 os
 shutil
