@@ -3,7 +3,7 @@
 Pillow
 opencv-python-headless
 # os
-shutil
+# shutil
 streamlit
 # Base ----------------------------------------
 matplotlib>=3.2.2
