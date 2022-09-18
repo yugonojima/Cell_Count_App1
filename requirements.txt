@@ -1,7 +1,8 @@
 # YOLOv5 requirements
 # Usage: pip install -r requirements.txt
 Pillow
-opencv-python-headless
+# opencv-python-headless
+opencv-python
 # os
 # shutil
 streamlit
