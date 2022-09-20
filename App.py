@@ -2,12 +2,12 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-# import cv2
+import cv2
 import os
 import shutil
 
 
-# from yolov5 import detect2
+from yolov5 import detect2
 
 ## サイドパネル（インプット部）
 # st.sidebar.header('Input Features')
@@ -46,19 +46,19 @@ def main():
 
     if uploaded_files is not None:
         # Make temp file path from uploaded file
-        # for uploaded_file in uploaded_files:
-        #     image=Image.open(uploaded_file)
-        #     img_array = np.array(image)
-        #     resize_img = cv2.resize(img_array, (640, 640))
-        #     img = cv2.cvtColor(resize_img, cv2.COLOR_BGR2RGB)
-        #     cv2.imwrite('/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0/img{}.jpg'.format(num), img)
-        #     num += 1
+        for uploaded_file in uploaded_files:
+            image=Image.open(uploaded_file)
+            img_array = np.array(image)
+            resize_img = cv2.resize(img_array, (640, 640))
+            img = cv2.cvtColor(resize_img, cv2.COLOR_BGR2RGB)
+            cv2.imwrite('/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0/img{}.jpg'.format(num), img)
+            num += 1
         
       
-        # detect2.run(source='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0',
-        #  weights='/Users/yugonojima/practice/plivate/Cell-Count/yolov5/runs/train/exp2/weights/best.pt',
-        #   name='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/result',
-        #   exist_ok=True)
+        detect2.run(source='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0',
+         weights='/Users/yugonojima/practice/plivate/Cell-Count/yolov5/runs/train/exp2/weights/best.pt',
+          name='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/result',
+          exist_ok=True)
         
         # files = glob.glob("cell-count-data/result/*")
         # for file in files:
