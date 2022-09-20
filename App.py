@@ -7,7 +7,7 @@ import os
 import shutil
 
 
-from yolov5 import detect2
+# from yolov5 import detect2
 
 ## サイドパネル（インプット部）
 # st.sidebar.header('Input Features')
