@@ -55,10 +55,10 @@ def main():
             num += 1
         
       
-        detect2.run(source='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0',
-         weights='/Users/yugonojima/practice/plivate/Cell-Count/yolov5/runs/train/exp2/weights/best.pt',
-          name='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/result',
-          exist_ok=True)
+        # detect2.run(source='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0',
+        #  weights='/Users/yugonojima/practice/plivate/Cell-Count/yolov5/runs/train/exp2/weights/best.pt',
+        #   name='/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/result',
+        #   exist_ok=True)
         
         # files = glob.glob("cell-count-data/result/*")
         # for file in files:
