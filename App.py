@@ -51,7 +51,7 @@ def main():
             img_array = np.array(image)
             resize_img = cv2.resize(img_array, (640, 640))
             img = cv2.cvtColor(resize_img, cv2.COLOR_BGR2RGB)
-            cv2.imwrite('/Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test0/img{}.jpg'.format(num), img)
+            cv2.imwrite('cell-count-data/test0/img{}.jpg'.format(num), img)
             num += 1
         
       
