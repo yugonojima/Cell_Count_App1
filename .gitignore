@@ -1,2 +1,5 @@
 /.venv/
-/cell-count-data/
+/cell-count-data/train
+/cell-count-data/train-pictures
+/cell-count-data/val
+

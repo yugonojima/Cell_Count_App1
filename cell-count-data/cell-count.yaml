@@ -1,0 +1,7 @@
+train: /Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/train
+val: /Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/val
+test: /Users/yugonojima/practice/plivate/Cell-Count/cell-count-data/test
+
+nc: 2
+
+names: ['Cell','Other']
