@@ -46,7 +46,7 @@ def main():
       
         detect2.run(source='cell-count-data/test0',
          weights='yolov5/runs/train/exp2/weights/best.pt',
-          name='cell-count-data/result',
+        #   name='cell-count-data/result',
           exist_ok=True)
         
         # files = glob.glob("cell-count-data/result/*")
@@ -55,7 +55,7 @@ def main():
         # st.image(result_image,caption = 'サムネイル画像')
 
 
-        image_dir = "cell-count-data/result"
+        image_dir = "yolov5/runs/detect/exp"
         fName_list = os.listdir(image_dir)# 画像ファイルのリストを取得
         img_file_num = len(os.listdir(image_dir))#画像ファイル数
 
@@ -76,9 +76,9 @@ def main():
                 break
     
     if st.button("削除"):
-        shutil.rmtree('cell-count-data/result/')
+        shutil.rmtree('yolov5/runs/detect/exp/')
         shutil.rmtree('cell-count-data/test0/')
-        os.mkdir('cell-count-data/result/')
+        # os.mkdir('cell-count-data/result/')
         os.mkdir('cell-count-data/test0/')
     st.write('※削除ボタンを押した後、ページを更新してください')
 
