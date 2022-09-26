@@ -4,3 +4,9 @@
 /cell-count-data/val
 /Users/yugonojima/practice/plivate/Cell-Count/yolov5
 !/yolov5/detect2.py
+cell-count-data/.DS_Store
+cell-count-data/cell-count.yaml
+cell-count-data/train.cache
+cell-count-data/val.cache
+cell-count-data/classes.txt
+cell-count-data/
