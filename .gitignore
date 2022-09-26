@@ -1,2 +1,6 @@
 /.venv/
-/cell-count-data/
+/cell-count-data/train
+/cell-count-data/train-pictures
+/cell-count-data/val
+/Users/yugonojima/practice/plivate/Cell-Count/yolov5
+!/yolov5/detect2.py
