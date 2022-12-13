@@ -75,6 +75,8 @@ def main():
             else:
                 break
     
+        st.write('<信頼度が0.5以上の細胞のみを計測しています>')
+    
     if st.button("削除"):
         shutil.rmtree('yolov5/runs/detect/exp/')
         shutil.rmtree('cell-count-data/test0/')
